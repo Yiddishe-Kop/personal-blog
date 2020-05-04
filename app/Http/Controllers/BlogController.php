@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Canvas\Events\PostViewed;
 use Canvas\Post;
 use Canvas\Tag;
 
@@ -19,6 +20,9 @@ class BlogController extends Controller {
     }
 
     public function show(Post $post) {
+
+        event(new PostViewed($post));
+
         return view('blog.show', compact('post'));
     }
 }
