@@ -11,7 +11,7 @@ return [
     | to change this path to anything you like. Note that the URI will not
     | affect the paths of its internal API that aren't exposed to users.
     |
-    */
+     */
 
     'path' => env('CANVAS_PATH_NAME', 'canvas'),
 
@@ -24,7 +24,7 @@ return [
     | use for authentication. This will define the relationships between
     | a user and their posts, tags, and topics that they author.
     |
-    */
+     */
 
     'user' => Illuminate\Foundation\Auth\User::class,
 
@@ -37,11 +37,12 @@ return [
     | the chance to add your own middleware to this list or change any of
     | the existing middleware. Or, you can simply stick with the list.
     |
-    */
+     */
 
     'middleware' => [
         'web',
         'auth',
+        'admin',
     ],
 
     /*
@@ -53,7 +54,7 @@ return [
     | use any of the disks defined in the config/filesystems.php file and
     | you may also change the maximum upload size from its 3MB default.
     |
-    */
+     */
 
     'storage_disk' => env('CANVAS_STORAGE_DISK', 'local'),
 
@@ -70,7 +71,7 @@ return [
     | app. Use the confidential Access Key given to you to integrate with
     | the API. Note that demo apps are limited to 50 requests per hour.
     |
-    */
+     */
 
     'unsplash' => [
         'access_key' => env('CANVAS_UNSPLASH_ACCESS_KEY'),
@@ -86,7 +87,7 @@ return [
     | support the notification system as an opt-in feature.
     |
     |
-    */
+     */
 
     'mail' => [
         'enabled' => env('CANVAS_MAIL_ENABLED', false),
