@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        mono: ['Cascadia', ...defaultTheme.fontFamily.mono],
       },
     },
   },

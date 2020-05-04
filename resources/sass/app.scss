@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 
+@font-face {
+  font-family: "Cascadia";
+  src: url("/assets/fonts/Cascadia.ttf");
+}
+
 .article {
   -moz-osx-font-smoothing: grayscale;
   h2 {
@@ -17,6 +22,15 @@
   }
   blockquote {
     @apply mb-5 py-3 px-3 bg-cool-gray-100 border-l-4 border-cool-gray-400 rounded-r-md;
+  }
+  ol {
+    @apply my-5 pl-5 list-decimal;
+  }
+  ul {
+    @apply my-5 pl-5 list-disc;
+  }
+  code {
+    @apply mx-1 px-1.5 rounded bg-cool-gray-700 text-cool-gray-100 font-mono;
   }
   .embedded_image {
     @apply my-8;
