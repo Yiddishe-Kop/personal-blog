@@ -21,7 +21,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <x-ui.logo class="flex-shrink-0 flex items-center" />
-          <div class="hidden sm:-my-px sm:ml-6 sm:flex items-center">
+          <div class="sm:-my-px sm:ml-6 sm:flex items-center">
             <a href="/"
               class="ml-8 inline-flex items-center px-1 pt-1  text-sm font-medium leading-5 text-gray-900 focus:outline-none  transition duration-150 ease-in-out">
               Articles
