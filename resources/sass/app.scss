@@ -30,7 +30,7 @@
     @apply my-5 pl-5 list-disc;
   }
   code {
-    @apply mx-1 px-1.5 rounded bg-cool-gray-700 text-cool-gray-100 font-mono;
+    @apply mx-1 px-1.5 py-0.5 rounded bg-cool-gray-100 text-cool-gray-700 text-sm font-mono;
   }
   .embedded_image {
     @apply my-8;
