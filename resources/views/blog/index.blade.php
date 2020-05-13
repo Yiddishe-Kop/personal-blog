@@ -23,7 +23,7 @@
         <p class="mt-4 -mx-1 flex">
           @foreach ($post->tags as $tag)
           <a href="/tags/{{ $tag->slug }}"
-            class="relative z-20 mx-1 pb-1 px-3 text-xs bg-teal-100 text-teal-600 rounded-full">{{ $tag->name }}</a>
+            class="relative z-20 mx-1 py-1 px-3 text-xs bg-teal-100 text-teal-600 rounded-full">{{ $tag->name }}</a>
           @endforeach
         </p>
         <div class="mt-6 flex items-center justify-between text-cool-gray-400">
