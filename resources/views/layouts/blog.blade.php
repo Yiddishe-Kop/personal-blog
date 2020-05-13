@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <x-head-meta />
+  <x-head-meta :seo="$seo ?? []" />
   <title>Blog | Yiddishe Kop</title>
 </head>
 

@@ -1,4 +1,9 @@
-@extends('layouts.blog')
+@extends('layouts.blog', ['seo' => [
+'title' => $post->title,
+'description' => $post->summary,
+'image' => $post->featured_image,
+]
+])
 
 @push('head')
 <link rel="stylesheet" href="/css/atom-one-dark.css">
