@@ -5,7 +5,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <h1 class="mt-12 mb-6 text-3xl font-bold leading-tight text-gray-900">
-      {!! $title ?? 'Stay tuned to our articles.' !!}
+      {!! $title ?? 'Weekly programming articles.' !!}
     </h1>
   </div>
 </header>
