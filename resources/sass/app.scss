@@ -6,6 +6,11 @@
   src: url("/assets/fonts/Cascadia.ttf");
 }
 
+img.emoji {
+  width: 1em;
+  display: inline;
+}
+
 .article {
   -moz-osx-font-smoothing: grayscale;
   h2 {
