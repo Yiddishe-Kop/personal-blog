@@ -16,7 +16,8 @@
     <article class="relative flex flex-col @if($loop->first) md:col-span-2 lg:col-span-3 mb-12 @endif">
       <img class="w-full rounded-lg h-96 object-cover" src="{{ $post->featured_image }}" alt="{{ $post->title }}">
 
-      <div class="relative flex-1 flex flex-col justify-between ml-12 -mt-32 p-8 max-w-md bg-white rounded-lg">
+      <div
+        class="relative flex-1 flex flex-col justify-between @if($loop->first) ml-12 @else mx-6 @endif -mt-32 p-8 max-w-md bg-white rounded-lg">
 
         <h1 class="font-bold text-xl">{{ $post->title }}</h1>
         <p class="mt-2 text-sm text-cool-gray-500">{{ $post->summary }}</p>
