@@ -20,9 +20,7 @@ class BlogController extends Controller {
     }
 
     public function show(Post $post) {
-
-        event(new PostViewed($post));
-
+        event(new PostViewed($post)); // fire off view event for analytics
         return view('blog.show', compact('post'));
     }
 }

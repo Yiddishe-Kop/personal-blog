@@ -16,7 +16,8 @@
         "laravel/framework": "^7.0",
         "laravel/socialite": "^4.3",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^2.0"
+        "laravel/ui": "^2.0",
+        "spatie/laravel-feed": "^2.6"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

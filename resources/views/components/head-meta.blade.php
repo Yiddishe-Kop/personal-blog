@@ -19,6 +19,8 @@
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 @stack('head')
 
+@include('feed::links')
+
 <script defer src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
 <script>
   window.onload = function() { // runs the script when the page is loading

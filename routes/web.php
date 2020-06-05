@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::get('/', 'BlogController@index')->name('blog.index');
-Route::get('/posts/{post:slug}', 'BlogController@show');
+Route::get('/posts/{post:slug}', 'BlogController@show')->name('blog.post.show');
 Route::get('/tags/{tag:slug}', 'BlogController@tagsIndex');
+
+// RSS feeds
+Route::feeds();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
