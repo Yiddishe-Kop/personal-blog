@@ -19,7 +19,7 @@ class NewsItem extends Post implements Feedable {
     }
 
     public static function getFeedItems() {
-        return NewsItem::orderBy('published_at', 'desc')->limit(50)->get();
+        return NewsItem::orderBy('published_at', 'desc')->published()->limit(50)->get();
     }
 
 }
