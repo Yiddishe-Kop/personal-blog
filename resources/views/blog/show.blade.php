@@ -12,28 +12,28 @@
 
 @section('content')
 <main>
-  <div class="relative max-w-7xl mx-auto sm:px-6 lg:px-8 mb-16">
-    <img class="w-full rounded-lg h-96 object-cover relative z-0" src="{{ $post->featured_image }}"
+  <div class="relative mx-auto mb-16 max-w-7xl sm:px-6 lg:px-8">
+    <img class="relative z-0 object-cover w-full rounded-lg h-96" src="{{ $post->featured_image }}"
       alt="{{ $post->title }}">
-    <p class="mt-4 absolute top-0 right-0 left-0 flex items-center justify-center">
+    <p class="absolute top-0 left-0 right-0 flex items-center justify-center mt-4">
       @foreach ($post->tags as $tag)
       <a href="/tags/{{ $tag->slug }}"
-        class="relative z-20 mx-1 py-1 px-3 text-xs bg-teal-100 text-teal-600 rounded-full">{{ $tag->name }}</a>
+        class="relative z-20 px-2 py-0.5 mx-1 text-xs font-medium hover:shadow-outline-teal transition text-teal-600 bg-teal-100 rounded-full">{{ $tag->name }}</a>
       @endforeach
     </p>
-    <article class="-my-12 mx-auto py-12 px-8 md:px-16 lg:px-28 max-w-5xl bg-white rounded-lg relative z-10">
+    <article class="relative z-10 max-w-5xl px-8 py-12 mx-auto -my-12 bg-white rounded-lg md:px-16 lg:px-28">
 
       <header class="text-center">
 
-        <h1 class="mt-12 font-bold text-xl">{{ $post->title }}</h1>
-        <div class="mt-2 text-sm flex items-center justify-center text-cool-gray-400">
+        <h1 class="mt-12 text-3xl font-black">{{ $post->title }}</h1>
+        <div class="flex items-center justify-center mt-2 text-sm text-cool-gray-400">
           <p>{{ $post->read_time }}</p>
           <span class="px-2 text-cool-gray-800">&middot;</span>
           <p>{{ $post->created_at->diffForHumans() }}</p>
         </div>
       </header>
 
-      <div class="article mt-16 text-cool-gray-800">
+      <div class="mt-16 article text-cool-gray-800">
         {!! $post->body !!}
       </div>
 

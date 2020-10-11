@@ -16,7 +16,9 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    boxShadow: ['hover', 'group-hover', 'responsive'],
+  },
   plugins: [
     require('@tailwindcss/ui'),
   ],
