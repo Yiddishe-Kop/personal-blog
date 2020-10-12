@@ -23,13 +23,16 @@ img.emoji {
     @apply mb-4 leading-6;
   }
   a {
-    box-shadow: inset 0 -4px 0 #dae2e9;
-    transition: box-shadow 0.2s ease-in;
-    &:hover {
-      box-shadow: inset 0 -3px 0 #97a6ba;
-    }
-    &:active {
-      box-shadow: inset 0 -3px 0 #ffad1f;
+    padding: 2px 0px 1px;
+    background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(255, 173, 31, 0.5) calc(50% - 9px), rgba(255, 173, 31, 0.3) 100%);
+    transition: background-position 120ms ease-in-out 0s, padding 120ms ease-in-out 0s;
+    background-size: 100% 200%;
+    background-position: 0px 0px;
+    word-break: break-word;
+    &:hover, &:active {
+      @apply text-gray-900;
+      background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(255, 173, 31, 0.7) calc(50% - 9px), rgba(255, 173, 31, 0.7) 100%);
+      background-position: 0px 100%;
     }
   }
   blockquote {
