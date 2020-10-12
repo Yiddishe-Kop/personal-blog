@@ -22,17 +22,23 @@ img.emoji {
   p {
     @apply mb-4 leading-6;
   }
+  // a {
+  //   padding: 2px 0px 1px;
+  //   background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(255, 173, 31, 0.5) calc(50% - 9px), rgba(255, 173, 31, 0.3) 100%);
+  //   transition: background-position 120ms ease-in-out 0s, padding 120ms ease-in-out 0s;
+  //   background-size: 100% 200%;
+  //   background-position: 0px 0px;
+  //   word-break: break-word;
+  //   &:hover, &:active {
+  //     @apply text-gray-900;
+  //     background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(255, 173, 31, 0.7) calc(50% - 9px), rgba(255, 173, 31, 0.7) 100%);
+  //     background-position: 0px 100%;
+  //   }
+  // }
   a {
-    padding: 2px 0px 1px;
-    background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(255, 173, 31, 0.5) calc(50% - 9px), rgba(255, 173, 31, 0.3) 100%);
-    transition: background-position 120ms ease-in-out 0s, padding 120ms ease-in-out 0s;
-    background-size: 100% 200%;
-    background-position: 0px 0px;
-    word-break: break-word;
+    @apply bg-brand bg-opacity-25 text-gray-800 border-b-2 border-brand transition-all duration-200;
     &:hover, &:active {
-      @apply text-gray-900;
-      background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(255, 173, 31, 0.7) calc(50% - 9px), rgba(255, 173, 31, 0.7) 100%);
-      background-position: 0px 100%;
+      @apply bg-opacity-75 text-gray-900;
     }
   }
   blockquote {
