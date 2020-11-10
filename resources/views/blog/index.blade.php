@@ -35,7 +35,9 @@
       <a href="/posts/{{ $post->slug }}" class="absolute inset-0 z-10"></a>
     </article>
     @endforeach
-
   </div>
+
+  {{ $posts->links() }}
+
 </main>
 @endsection
